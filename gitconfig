@@ -3,6 +3,7 @@
 	email = matt@vanderpol.net
 [core]
 	excludesfile = ~/.gitignore
+	autocrlf = input
 
 [alias]
   s = status --short
