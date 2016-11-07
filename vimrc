@@ -39,3 +39,4 @@ colorscheme sunburst
 " general setup
 set number
 set smartindent
+set encoding=utf-8
