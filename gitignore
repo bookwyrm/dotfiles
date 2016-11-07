@@ -6,3 +6,6 @@ node_modules
 
 # vim swap file
 *.swp
+
+# OS files
+*.DS_Store
