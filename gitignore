@@ -1,2 +1,8 @@
+# Setup: git config --global core.excludesfile '~/.gitignore'
+# Reference: http://stackoverflow.com/questions/7335420/global-git-ignore#7335487
+
+# JS packages
 node_modules
+
+# vim swap file
 *.swp
