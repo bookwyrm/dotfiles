@@ -17,6 +17,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
+Plugin 'vim-airline/vim-airline'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
@@ -74,3 +75,6 @@ let g:ctrlp_custom_ingore = {
       \ 'dir': '\v[\/](node_modules|bower_modules|\.git)$',
       \ }
 "let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+" show vim-airline all the time
+set laststatus=2
