@@ -78,3 +78,12 @@ let g:ctrlp_custom_ingore = {
 
 " show vim-airline all the time
 set laststatus=2
+
+" size of a hard tabstop
+set tabstop=2
+
+" size of an "indent"
+set shiftwidth=2
+
+" always use spaces instead of tab characters
+set expandtab
