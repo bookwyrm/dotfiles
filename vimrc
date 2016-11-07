@@ -40,3 +40,20 @@ colorscheme sunburst
 set number
 set smartindent
 set encoding=utf-8
+
+if has("autocmd")
+	autocmd BufWritePre *.rb,*.js,*.php,*.html,*.css,*.scss,*.erb,*.coffee :call <SID>StripTrailingWhitespaces()
+endif
+
+nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
+function! <SID>StripTrailingWhitespaces()
+	"preparation: save last search and cursor position
+	let _s=@/
+	let l = line(".")
+	let c = col(".")
+	" Strip trailing whitespace
+	%s/\s\+$//e
+	" Clean up: restore previous search history and cursor position
+	let @/=_s
+	call cursor(l,c)
+endfunction
