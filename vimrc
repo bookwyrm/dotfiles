@@ -14,6 +14,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
 Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
@@ -64,3 +65,10 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 
 nmap <leader>n :NERDTreeToggle<CR>
+
+" https://github.com/ctrlpvim/ctrlp.vim
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ingore = {
+      \ 'dir': '\v[\/](node_modules|bower_modules|\.git)$',
+      \ }
+"let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
