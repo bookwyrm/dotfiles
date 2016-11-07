@@ -35,3 +35,7 @@ inoremap jk <Esc>
 
 " Theme
 colorscheme sunburst
+
+" general setup
+set number
+set smartindent
