@@ -12,6 +12,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" Plugins
+Plugin 'scrooloose/nerdtree'
+
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
 
@@ -59,3 +62,5 @@ function! <SID>StripTrailingWhitespaces()
 	let @/=_s
 	call cursor(l,c)
 endfunction
+
+nmap <leader>n :NERDTreeToggle<CR>
