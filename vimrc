@@ -40,6 +40,8 @@ colorscheme sunburst
 set number
 set smartindent
 set encoding=utf-8
+set ignorecase
+set smartcase
 
 if has("autocmd")
 	autocmd BufWritePre *.rb,*.js,*.php,*.html,*.css,*.scss,*.erb,*.coffee :call <SID>StripTrailingWhitespaces()
