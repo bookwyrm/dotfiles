@@ -1,0 +1,5 @@
+[user]
+	name = Matt Vanderpol
+	email = matt@vanderpol.net
+[core]
+	excludesfile = ~/.gitignore
