@@ -87,3 +87,7 @@ set shiftwidth=2
 
 " always use spaces instead of tab characters
 set expandtab
+
+" Nicer font
+set guifont=Source\ Code\ Pro\ Semibold:h14
+
