@@ -18,6 +18,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
+Plugin 'scrooloose/syntastic'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
@@ -90,4 +91,9 @@ set expandtab
 
 " Nicer font
 set guifont=Source\ Code\ Pro\ Semibold:h14
+
+" Syntax checkers
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_css_checkers = ['stylelint']
+let g:syntastic_scss_checkers = ['stylelint']
 
