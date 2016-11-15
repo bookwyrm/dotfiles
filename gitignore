@@ -7,6 +7,9 @@ node_modules
 # vim swap file
 *.swp
 
+# ctags files
+tags
+
 *~
 .sass-cache
 
