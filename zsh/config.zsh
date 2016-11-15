@@ -50,3 +50,4 @@ bindkey '^[^N' newtab
 bindkey '^?' backward-delete-char
 bindkey -e
 
+export NODE_PATH="/usr/local/lib/node_modules"
