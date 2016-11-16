@@ -1,6 +1,6 @@
 {
   "plugins": [
-    "stylelint-scss"
+    "/usr/local/lib/node_modules/stylelint-scss"
   ],
   "rules": {
     "scss/dollar-variable-colon-space-before": "never",
