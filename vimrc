@@ -20,6 +20,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'moll/vim-bbye'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
@@ -109,3 +110,6 @@ nmap <D-[> V<gv<esc>
 " Comment/uncomment blocks
 map <D-/> <plug>NERDCommenterToggle<CR>
 imap <D-/> <esc><plug>NERDCommenterToggle<CR>i
+
+" Close a buffer w/out losing the window
+nnoremap <Leader>bd :Bdelete<CR>
