@@ -22,6 +22,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'moll/vim-bbye'
 Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-endwise'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
