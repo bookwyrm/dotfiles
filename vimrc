@@ -21,6 +21,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'moll/vim-bbye'
+Plugin 'tpope/vim-rails'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
