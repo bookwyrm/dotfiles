@@ -23,6 +23,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'moll/vim-bbye'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-endwise'
+Plugin 'ervandew/supertab'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
