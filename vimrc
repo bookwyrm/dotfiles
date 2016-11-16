@@ -111,5 +111,8 @@ nmap <D-[> V<gv<esc>
 map <D-/> <plug>NERDCommenterToggle<CR>
 imap <D-/> <esc><plug>NERDCommenterToggle<CR>i
 
+" highlight search results
+set hlsearch
+
 " Close a buffer w/out losing the window
 nnoremap <Leader>bd :Bdelete<CR>
