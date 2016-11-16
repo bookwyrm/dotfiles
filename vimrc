@@ -97,3 +97,10 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_css_checkers = ['stylelint']
 let g:syntastic_scss_checkers = ['stylelint']
 
+" Indent/outdent helpers 
+vmap <D-]> >gv
+vmap <D-[> <gv
+imap <D-]> <esc>V>gv<esc>a
+imap <D-[> <esc>V<gv<esc>a
+nmap <D-]> V>gv<esc>
+nmap <D-[> V<gv<esc>
