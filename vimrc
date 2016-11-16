@@ -19,6 +19,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdcommenter'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
@@ -104,3 +105,7 @@ imap <D-]> <esc>V>gv<esc>a
 imap <D-[> <esc>V<gv<esc>a
 nmap <D-]> V>gv<esc>
 nmap <D-[> V<gv<esc>
+
+" Comment/uncomment blocks
+map <D-/> <plug>NERDCommenterToggle<CR>
+imap <D-/> <esc><plug>NERDCommenterToggle<CR>i
