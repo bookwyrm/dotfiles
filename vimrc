@@ -24,6 +24,7 @@ Plugin 'moll/vim-bbye'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-endwise'
 Plugin 'ervandew/supertab'
+Plugin 'joonty/vdebug'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
@@ -119,3 +120,14 @@ set hlsearch
 
 " Close a buffer w/out losing the window
 nnoremap <Leader>bd :Bdelete<CR>
+
+if !exists('g:vdebug_options')
+    let g:vdebug_options = {}
+endif
+
+" let g:vdebug_options["break_on_open"] = 0
+let g:vdebug_options['path_maps'] = {"/srv/www": "/Users/matt/Projects/vvv-local/www"}
+let g:vdebug_options['server'] = "192.168.0.70"
+"let g:vdebug_options["watch_window_height"]=45
+"let g:vdebug_options["status_window_height"]=5
+" let g:vdebug_options["continuous_mode"]=1
