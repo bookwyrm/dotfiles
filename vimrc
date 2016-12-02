@@ -25,6 +25,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-endwise'
 Plugin 'ervandew/supertab'
 Plugin 'joonty/vdebug'
+Plugin 'editorconfig/editorconfig-vim'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
