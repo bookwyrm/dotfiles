@@ -26,6 +26,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'ervandew/supertab'
 Plugin 'joonty/vdebug'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin '2072/PHP-Indenting-for-VIm'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
@@ -132,3 +133,6 @@ let g:vdebug_options['server'] = "192.168.0.70"
 "let g:vdebug_options["watch_window_height"]=45
 "let g:vdebug_options["status_window_height"]=5
 " let g:vdebug_options["continuous_mode"]=1
+
+let g:PHP_default_indenting = 1
+let g:PHP_outdentphpescape = 0
