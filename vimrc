@@ -135,4 +135,4 @@ let g:vdebug_options['server'] = "192.168.0.70"
 " let g:vdebug_options["continuous_mode"]=1
 
 let g:PHP_default_indenting = 1
-let g:PHP_outdentphpescape = 0
+let g:PHP_outdentphpescape = 1
