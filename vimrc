@@ -137,5 +137,6 @@ let g:vdebug_options['server'] = "192.168.0.70"
 "let g:vdebug_options["status_window_height"]=5
 " let g:vdebug_options["continuous_mode"]=1
 
-let g:PHP_default_indenting = 1
-let g:PHP_outdentphpescape = 1
+"let g:PHP_default_indenting = 1
+"let g:PHP_outdentphpescape = 1
+let g:PHP_vintage_case_default_indent = 1
