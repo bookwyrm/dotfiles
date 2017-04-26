@@ -27,6 +27,7 @@ Plugin 'ervandew/supertab'
 Plugin 'joonty/vdebug'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin '2072/PHP-Indenting-for-VIm'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
