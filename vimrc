@@ -105,6 +105,8 @@ set guifont=Source\ Code\ Pro\ Semibold:h14
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_css_checkers = ['stylelint']
 let g:syntastic_scss_checkers = ['stylelint']
+let g:syntastic_mode_map = { 'passive_filetypes': ['sass', 'scss'] }
+nnoremap <Leader>lint :SyntasticCheck
 
 " Indent/outdent helpers 
 vmap <D-]> >gv
