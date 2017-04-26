@@ -3,6 +3,7 @@
 
 # JS packages
 node_modules
+bower_components
 
 # vim swap file
 *.swp
