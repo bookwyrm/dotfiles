@@ -28,6 +28,7 @@ Plugin 'joonty/vdebug'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin '2072/PHP-Indenting-for-VIm'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'rizzatti/dash.vim'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
@@ -140,3 +141,5 @@ let g:vdebug_options['server'] = "192.168.0.70"
 "let g:PHP_default_indenting = 1
 "let g:PHP_outdentphpescape = 1
 let g:PHP_vintage_case_default_indent = 1
+
+:nmap <silent> <leader>d <Plug>DashSearch
