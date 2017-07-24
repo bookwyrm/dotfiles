@@ -16,3 +16,6 @@ tags
 
 # OS files
 *.DS_Store
+
+# JetBrains config file
+.idea/
