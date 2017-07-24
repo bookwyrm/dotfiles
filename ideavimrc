@@ -1,0 +1,3 @@
+" Alernate escape from insert mode to avoid escape key
+inoremap jk <Esc>
+
