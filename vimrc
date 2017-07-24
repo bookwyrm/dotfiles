@@ -29,6 +29,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin '2072/PHP-Indenting-for-VIm'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'rizzatti/dash.vim'
+Plugin 'tpope/vim-surround'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
