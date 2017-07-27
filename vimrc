@@ -30,6 +30,8 @@ Plugin '2072/PHP-Indenting-for-VIm'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'rizzatti/dash.vim'
 Plugin 'tpope/vim-surround'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
