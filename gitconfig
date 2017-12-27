@@ -40,3 +40,17 @@
   # https://coderwall.com/p/ndinba
   latest = "for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)'"
   latestr = "for-each-ref --sort=-committerdate --format='%(committerdate:relative) %(refname:short)'"
+[mergetool]
+	keepBackup = true
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[merge]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
