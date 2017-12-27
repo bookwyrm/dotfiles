@@ -32,6 +32,7 @@ Plugin 'rizzatti/dash.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'posva/vim-vue'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
