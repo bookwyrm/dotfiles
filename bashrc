@@ -5,3 +5,5 @@ export PATH="/Users/matt/Library/Python/2.7/bin:$PATH" # Add local pipenv to PAT
 source ~/.git-prompt.sh
 export PS1='\h:\W \u $(__git_ps1 "(%s)")\$ '
 
+# Homebrew completions
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
