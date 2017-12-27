@@ -34,6 +34,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'posva/vim-vue'
 Plugin 'ap/vim-css-color'
+Plugin 'Valloric/YouCompleteMe'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
