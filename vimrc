@@ -24,17 +24,17 @@ Plugin 'moll/vim-bbye'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-endwise'
 Plugin 'ervandew/supertab'
-Plugin 'joonty/vdebug'
+"Plugin 'joonty/vdebug'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin '2072/PHP-Indenting-for-VIm'
 Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'rizzatti/dash.vim'
+"Plugin 'rizzatti/dash.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'posva/vim-vue'
 Plugin 'ap/vim-css-color'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
@@ -133,13 +133,13 @@ set hlsearch
 " Close a buffer w/out losing the window
 nnoremap <Leader>bd :Bdelete<CR>
 
-if !exists('g:vdebug_options')
-    let g:vdebug_options = {}
-endif
+"if !exists('g:vdebug_options')
+    "let g:vdebug_options = {}
+"endif
 
 " let g:vdebug_options["break_on_open"] = 0
-let g:vdebug_options['path_maps'] = {"/srv/www": "/Users/matt/Projects/vvv-local/www"}
-let g:vdebug_options['server'] = "192.168.0.70"
+"let g:vdebug_options['path_maps'] = {"/srv/www": "/Users/matt/Projects/vvv-local/www"}
+"let g:vdebug_options['server'] = "192.168.0.70"
 "let g:vdebug_options["watch_window_height"]=45
 "let g:vdebug_options["status_window_height"]=5
 " let g:vdebug_options["continuous_mode"]=1
@@ -148,4 +148,4 @@ let g:vdebug_options['server'] = "192.168.0.70"
 "let g:PHP_outdentphpescape = 1
 let g:PHP_vintage_case_default_indent = 1
 
-:nmap <silent> <leader>d <Plug>DashSearch
+":nmap <silent> <leader>d <Plug>DashSearch
