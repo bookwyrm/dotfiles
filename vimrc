@@ -149,3 +149,11 @@ nnoremap <Leader>bd :Bdelete<CR>
 let g:PHP_vintage_case_default_indent = 1
 
 ":nmap <silent> <leader>d <Plug>DashSearch
+
+let g:ctrlp_user_command = 'cd %s;
+      \ commonfilter="\.(jpg|bmp|png|jar|7z|zip|tar|gz|tgz|bz|git|swp|ctrlpignore)$";
+      \ if [ ! -r ".ctrlpignore" ]; then
+      \   find . -type f | grep -Evi "$commonfilter";
+      \ else
+      \   find . -type f | grep -vF "$(cat .ctrlpignore)" | grep -Evi "$commonfilter";
+      \ fi'
