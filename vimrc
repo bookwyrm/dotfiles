@@ -157,3 +157,5 @@ let g:ctrlp_user_command = 'cd %s;
       \ else
       \   find . -type f | grep -vF "$(cat .ctrlpignore)" | grep -Evi "$commonfilter";
       \ fi'
+
+let g:vim_markdown_folding_disabled=1
