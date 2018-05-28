@@ -35,6 +35,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'posva/vim-vue'
 Plugin 'ap/vim-css-color'
 "Plugin 'Valloric/YouCompleteMe'
+Plugin 'cakebaker/scss-syntax.vim'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
