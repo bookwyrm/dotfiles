@@ -18,7 +18,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'moll/vim-bbye'
 Plugin 'tpope/vim-rails'
@@ -36,6 +36,7 @@ Plugin 'posva/vim-vue'
 Plugin 'ap/vim-css-color'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'w0rp/ale'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
@@ -110,11 +111,11 @@ set expandtab
 set guifont=Source\ Code\ Pro\ Semibold:h14
 
 " Syntax checkers
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_css_checkers = ['stylelint']
-let g:syntastic_scss_checkers = ['stylelint']
-let g:syntastic_mode_map = { 'passive_filetypes': ['sass', 'scss'] }
-nnoremap <Leader>lint :SyntasticCheck
+" let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_css_checkers = ['stylelint']
+" let g:syntastic_scss_checkers = ['stylelint']
+" let g:syntastic_mode_map = { 'passive_filetypes': ['sass', 'scss'] }
+" nnoremap <Leader>lint :SyntasticCheck
 
 " Indent/outdent helpers 
 vmap <D-]> >gv
