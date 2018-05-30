@@ -18,7 +18,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'moll/vim-bbye'
 Plugin 'tpope/vim-rails'
@@ -35,6 +35,8 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'posva/vim-vue'
 Plugin 'ap/vim-css-color'
 "Plugin 'Valloric/YouCompleteMe'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'w0rp/ale'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
@@ -109,11 +111,11 @@ set expandtab
 set guifont=Source\ Code\ Pro\ Semibold:h14
 
 " Syntax checkers
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_css_checkers = ['stylelint']
-let g:syntastic_scss_checkers = ['stylelint']
-let g:syntastic_mode_map = { 'passive_filetypes': ['sass', 'scss'] }
-nnoremap <Leader>lint :SyntasticCheck
+" let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_css_checkers = ['stylelint']
+" let g:syntastic_scss_checkers = ['stylelint']
+" let g:syntastic_mode_map = { 'passive_filetypes': ['sass', 'scss'] }
+" nnoremap <Leader>lint :SyntasticCheck
 
 " Indent/outdent helpers 
 vmap <D-]> >gv
@@ -157,3 +159,39 @@ let g:ctrlp_user_command = 'cd %s;
       \ else
       \   find . -type f | grep -vF "$(cat .ctrlpignore)" | grep -Evi "$commonfilter";
       \ fi'
+
+let g:vim_markdown_folding_disabled=1
+
+autocmd FileType vue syntax sync fromstart
+
+let g:ft = ''
+function! NERDCommenter_before()
+  if &ft == 'vue'
+    let g:ft = 'vue'
+    let stack = synstack(line('.'), col('.'))
+    if len(stack) > 0
+      let syn = synIDattr((stack)[0], 'name')
+      if len(syn) > 0
+        exe 'setf ' . substitute(tolower(syn), '^vue_', '', '')
+      endif
+    endif
+  endif
+endfunction
+function! NERDCommenter_after()
+  if g:ft == 'vue'
+    setf vue
+    let g:ft = ''
+  endif
+endfunction
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
