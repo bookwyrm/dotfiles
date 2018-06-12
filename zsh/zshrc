@@ -19,6 +19,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 #export SPHINXBUILD="/usr/local/opt/sphinx-doc/bin/sphinx-build"
 #export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/sbin:/Users/matt/.composer/vendor/bin:$PATH"
 
 #fpath=(/usr/local/share/zsh-completions $fpath)
