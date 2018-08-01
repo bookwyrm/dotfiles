@@ -1,3 +1,9 @@
+" Silently execute python3 once to avoid deprecation warnings
+" https://github.com/vim/vim/issues/3117#issuecomment-402622616
+if has('python3')
+  silent! python3 1
+endif
+
 " Vundle install - https://github.com/VundleVim/Vundle.vim
 " git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 set nocompatible              " be iMproved, required
