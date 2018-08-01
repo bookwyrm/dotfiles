@@ -37,6 +37,7 @@ Plugin 'ap/vim-css-color'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'w0rp/ale'
+Plugin 'mattn/emmet-vim'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
