@@ -71,6 +71,8 @@ colorscheme sunburst
 
 " general setup
 set number
+set relativenumber
+set numberwidth=5
 set smartindent
 set encoding=utf-8
 set ignorecase
