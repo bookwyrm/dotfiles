@@ -3,6 +3,7 @@
 if has('python3')
   silent! python3 1
 endif
+let mapleader = ','
 
 " Vundle install - https://github.com/VundleVim/Vundle.vim
 " git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -24,7 +25,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
-" Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'moll/vim-bbye'
 Plugin 'tpope/vim-rails'
@@ -34,7 +35,7 @@ Plugin 'ervandew/supertab'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin '2072/PHP-Indenting-for-VIm'
 Plugin 'mustache/vim-mustache-handlebars'
-"Plugin 'rizzatti/dash.vim'
+Plugin 'rizzatti/dash.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
@@ -44,6 +45,13 @@ Plugin 'ap/vim-css-color'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'w0rp/ale'
 Plugin 'mattn/emmet-vim'
+"Plugin 'janko-m/vim-test'
+Plugin 'tpope/vim-vinegar'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'tobyS/vmustache'
+Plugin 'tobyS/pdv'
+Plugin 'StanAngeloff/php.vim'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
@@ -103,6 +111,7 @@ let g:ctrlp_custom_ingore = {
       \ 'dir': '\v[\/](node_modules|bower_modules|\.git)$',
       \ }
 "let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 
 " show vim-airline all the time
 set laststatus=2
@@ -127,12 +136,12 @@ set guifont=Source\ Code\ Pro\ Semibold:h14
 " nnoremap <Leader>lint :SyntasticCheck
 
 " Indent/outdent helpers 
-vmap <D-]> >gv
-vmap <D-[> <gv
-imap <D-]> <esc>V>gv<esc>a
-imap <D-[> <esc>V<gv<esc>a
-nmap <D-]> V>gv<esc>
-nmap <D-[> V<gv<esc>
+vmap <C-]> >gv
+vmap <C-[> <gv
+"imap <C-]> <esc>V>gv<esc>a
+"imap <C-[> <esc>V<gv<esc>a
+"nmap <C-]> V>gv<esc>
+"nmap <C-[> V<gv<esc>
 
 " Comment/uncomment blocks
 map <D-/> <plug>NERDCommenterToggle<CR>
@@ -140,6 +149,9 @@ imap <D-/> <esc><plug>NERDCommenterToggle<CR>i
 
 " highlight search results
 set hlsearch
+
+" incremental search
+set incsearch
 
 " Close a buffer w/out losing the window
 nnoremap <Leader>bd :Bdelete<CR>
@@ -156,7 +168,7 @@ nnoremap <Leader>bd :Bdelete<CR>
 " let g:vdebug_options["continuous_mode"]=1
 
 "let g:PHP_default_indenting = 1
-"let g:PHP_outdentphpescape = 1
+"let g:PHP_outdentphpescape = 0
 let g:PHP_vintage_case_default_indent = 1
 
 ":nmap <silent> <leader>d <Plug>DashSearch
@@ -207,3 +219,45 @@ let g:NERDDefaultAlign = 'left'
 
 " Set characters for whitespace
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+
+" these "Ctrl mappings" work well when Caps Lock is mapped to Ctrl
+nmap <silent> t<C-n> :TestNearest<CR>
+nmap <silent> t<C-f> :TestFile<CR>
+nmap <silent> t<C-s> :TestSuite<CR>
+nmap <silent> t<C-l> :TestLast<CR>
+nmap <silent> t<C-g> :TestVisit<CR>
+
+set background=dark
+syntax enable
+
+" Easy edit for vimrc
+nmap <Leader>ev :tabedit $MYVIMRC<cr>
+
+" Easy clear searchi results
+nmap <Leader><space> :nohlsearch<cr>
+
+" Automatically source vimrc file on save
+augroup autosourcing
+  autocmd!
+  autocmd BufWritePost .vimrc source %
+augroup END
+
+" Quickly browse to any tag/symbol in the project.
+nmap <Leader>f :tag<space>
+
+" UltiSnips
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+"let g:UltiSnipsExpandTrigger="<C-f>"
+"let g:UltiSnipsJumpForwardTrigger="<C-f>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsSnippetsDir="~/.vim/myUltiSnips"
+let g:UltiSnipsSnippetDirectories = ['myUltiSnips']
+
+" PDV
+let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
+"nnoremap <leader>d :call pdv#DocumentWithSnip()<CR>
+
+" Dash
+:nmap <silent> <leader>d <Plug>DashSearch
+
+nmap U :redo<CR>
