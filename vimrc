@@ -266,4 +266,6 @@ nmap U :redo<CR>
 
 " Set pasteboard to not indent so that we can past without reflowing
 set pastetoggle=<F3>
-nmap <leader>ya :%y+<CR>
+
+" Copy all to system buffer
+nmap <leader>ya :%y+<CR> 
