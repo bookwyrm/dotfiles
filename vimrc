@@ -52,6 +52,8 @@ Plugin 'honza/vim-snippets'
 Plugin 'tobyS/vmustache'
 Plugin 'tobyS/pdv'
 Plugin 'StanAngeloff/php.vim'
+Plugin 'Yggdroot/indentLine'
+
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
