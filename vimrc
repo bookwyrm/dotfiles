@@ -269,3 +269,6 @@ set pastetoggle=<F3>
 
 " Copy all to system buffer
 nmap <leader>ya :%y+<CR> 
+
+" Shorthand to open help on right
+nnoremap <C-H> :vert bo help
