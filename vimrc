@@ -264,5 +264,6 @@ let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
 
 nmap U :redo<CR>
 
+" Set pasteboard to not indent so that we can past without reflowing
 set pastetoggle=<F3>
 nmap <leader>ya :%y+<CR>
