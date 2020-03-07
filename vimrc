@@ -53,6 +53,7 @@ Plugin 'tobyS/vmustache'
 Plugin 'tobyS/pdv'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'Yggdroot/indentLine'
+Plugin 'iloginow/vim-stylus'
 
 
 " sunburst theme
@@ -89,7 +90,7 @@ set ignorecase
 set smartcase
 
 if has("autocmd")
-	autocmd BufWritePre *.rb,*.js,*.php,*.html,*.css,*.scss,*.erb,*.coffee :call <SID>StripTrailingWhitespaces()
+	autocmd BufWritePre *.rb,*.js,*.php,*.html,*.css,*.scss,*.erb,*.coffee,*.styl :call <SID>StripTrailingWhitespaces()
 endif
 
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
