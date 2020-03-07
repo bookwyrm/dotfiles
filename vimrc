@@ -268,7 +268,7 @@ let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
 "nnoremap <leader>d :call pdv#DocumentWithSnip()<CR>
 
 " Dash
-:nmap <silent> <leader>d <Plug>DashSearch
+:nmap <silent> <leader>D <Plug>DashSearch
 
 nmap U :redo<CR>
 
