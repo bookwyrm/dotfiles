@@ -276,3 +276,5 @@ nnoremap <C-H> :vert bo help
 
 " Use different characters for different indent levels
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
+let g:ale_linters = { 'javascript': ['eslint']}
