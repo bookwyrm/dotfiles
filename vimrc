@@ -53,6 +53,8 @@ Plugin 'tobyS/vmustache'
 Plugin 'tobyS/pdv'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'Yggdroot/indentLine'
+Plugin 'chr4/nginx.vim'
+Plugin 'chr4/sslsecure.vim'
 
 
 " sunburst theme
