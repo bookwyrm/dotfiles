@@ -109,12 +109,18 @@ endfunction
 nmap <leader>n :NERDTreeToggle<CR>
 
 " https://github.com/ctrlpvim/ctrlp.vim
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
-let g:ctrlp_custom_ingore = {
-      \ 'dir': '\v[\/](node_modules|bower_modules|\.git)$',
-      \ }
+" set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+" let g:ctrlp_custom_ingore = {
+      " \ 'dir': '\v[\/](node_modules|bower_modules|\.git)$',
+      " \ }
 "let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
+" let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
+let g:ctrlp_custom_ignore = {
+	\ 'dir':  '\v[\/]\.(git|hg|svn|node_modules)$',
+	\ 'file': '\v\.(jpe?g|bmp|png|jar|7z|zip|tar|gz|tgz|bz2)$',
+	\ }
+nmap <c-R> :CtrlPBufTag<cr>
+nmap <c-e> :CtrlPMRUFiles<cr>
 
 " show vim-airline all the time
 set laststatus=2
@@ -176,13 +182,14 @@ let g:PHP_vintage_case_default_indent = 1
 
 ":nmap <silent> <leader>d <Plug>DashSearch
 
-let g:ctrlp_user_command = 'cd %s;
-      \ commonfilter="\.(jpg|bmp|png|jar|7z|zip|tar|gz|tgz|bz|git|swp|ctrlpignore)$";
-      \ if [ ! -r ".ctrlpignore" ]; then
-      \   find . -type f | grep -Evi "$commonfilter";
-      \ else
-      \   find . -type f | grep -vF "$(cat .ctrlpignore)" | grep -Evi "$commonfilter";
-      \ fi'
+" let g:ctrlp_user_command = 'ag %s -l --no-color --hidden -g ""'
+" let g:ctrlp_user_command = 'cd %s;
+      " \ commonfilter="\.(jpg|bmp|png|jar|7z|zip|tar|gz|tgz|bz|git|swp|ctrlpignore)$";
+      " \ if [ ! -r ".ctrlpignore" ]; then
+      " \   find . -type f | grep -Evi "$commonfilter";
+      " \ else
+      " \   find . -type f | grep -vF "$(cat .ctrlpignore)" | grep -Evi "$commonfilter";
+      " \ fi'
 
 let g:vim_markdown_folding_disabled=1
 
