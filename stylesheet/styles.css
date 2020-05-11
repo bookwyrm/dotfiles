@@ -4,14 +4,12 @@ pre, code, .blob-code-inner {
   font-variant-ligatures: contextual;
 }
 
-
-
 @font-face {
   font-family: "MLM";
-  src: url(https://fonts.local/MonoLisa-Medium.woff2) format(woff2), url(https://fonts.local/MonoLisa-Medium.woff) format(woff);
+  src: local('MonoLisa-Medium'), local('MonoLisa Medium'), url(https://fonts.local/MonoLisa-Medium.woff2) format(woff2), url(https://fonts.local/MonoLisa-Medium.woff) format(woff);
 }
 
 @font-face {
   font-family: "MLR";
-  src: url(https://fonts.local/MonoLisa-Regular.woff2) format(woff2), url(https://fonts.local/MonoLisa-Regular.woff) format(woff);
+  src: local('MonoLisa-Regular'), local('MonoLisa Regular'), url(https://fonts.local/MonoLisa-Regular.woff2) format(woff2), url(https://fonts.local/MonoLisa-Regular.woff) format(woff);
 }
