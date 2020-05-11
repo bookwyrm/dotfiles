@@ -1,0 +1,17 @@
+pre, code, .blob-code-inner {
+  font-family: "MLR";
+  font-size: 13px;
+  font-variant-ligatures: contextual;
+}
+
+
+
+@font-face {
+  font-family: "MLM";
+  src: url(https://fonts.local/MonoLisa-Medium.woff2) format(woff2), url(https://fonts.local/MonoLisa-Medium.woff) format(woff);
+}
+
+@font-face {
+  font-family: "MLR";
+  src: url(https://fonts.local/MonoLisa-Regular.woff2) format(woff2), url(https://fonts.local/MonoLisa-Regular.woff) format(woff);
+}
