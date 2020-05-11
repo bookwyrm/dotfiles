@@ -287,3 +287,6 @@ nnoremap <C-H> :vert bo help
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 let g:ale_linters = { 'javascript': ['eslint']}
+
+" To let backspace work for going beyond lines and the start point
+set backspace=indent,eol,start
