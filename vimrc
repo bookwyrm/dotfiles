@@ -55,7 +55,7 @@ Plugin 'StanAngeloff/php.vim'
 Plugin 'Yggdroot/indentLine'
 " Plugin 'iloginow/vim-stylus'
 Plugin 'chr4/nginx.vim'
-Plugin 'chr4/sslsecure.vim'
+" Plugin 'chr4/sslsecure.vim'
 
 
 " sunburst theme
