@@ -267,7 +267,7 @@ let g:UltiSnipsSnippetsDir="~/.vim/myUltiSnips"
 let g:UltiSnipsSnippetDirectories = ['myUltiSnips']
 
 " PDV
-let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
+let g:pdv_template_dir = $HOME ."/.dotfiles/vim/templates_snip"
 nnoremap <leader>d :call pdv#DocumentWithSnip()<CR>
 
 " Dash
