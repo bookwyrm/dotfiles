@@ -126,6 +126,7 @@ nmap <c-e> :CtrlPMRUFiles<cr>
 
 " show vim-airline all the time
 set laststatus=2
+let g:airline#extensions#whitespace#mixed_indent_algo = 1
 
 " size of a hard tabstop
 set tabstop=2
