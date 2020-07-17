@@ -92,20 +92,20 @@ set ignorecase
 set smartcase
 
 if has("autocmd")
-	autocmd BufWritePre *.rb,*.js,*.php,*.html,*.css,*.scss,*.erb,*.coffee,*.styl :call <SID>StripTrailingWhitespaces()
+  autocmd BufWritePre *.rb,*.js,*.php,*.html,*.css,*.scss,*.erb,*.coffee,*.styl :call <SID>StripTrailingWhitespaces()
 endif
 
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 function! <SID>StripTrailingWhitespaces()
-	"preparation: save last search and cursor position
-	let _s=@/
-	let l = line(".")
-	let c = col(".")
-	" Strip trailing whitespace
-	%s/\s\+$//e
-	" Clean up: restore previous search history and cursor position
-	let @/=_s
-	call cursor(l,c)
+  "preparation: save last search and cursor position
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " Strip trailing whitespace
+  %s/\s\+$//e
+  " Clean up: restore previous search history and cursor position
+  let @/=_s
+  call cursor(l,c)
 endfunction
 
 nmap <leader>n :NERDTreeToggle<CR>
@@ -147,7 +147,7 @@ set guifont=Source\ Code\ Pro\ Semibold:h14
 " let g:syntastic_mode_map = { 'passive_filetypes': ['sass', 'scss'] }
 " nnoremap <Leader>lint :SyntasticCheck
 
-" Indent/outdent helpers 
+" Indent/outdent helpers
 vmap <C-]> >gv
 vmap <C-[> <gv
 "imap <C-]> <esc>V>gv<esc>a
@@ -279,7 +279,7 @@ nmap U :redo<CR>
 set pastetoggle=<F3>
 
 " Copy all to system buffer
-nmap <leader>ya :%y+<CR> 
+nmap <leader>ya :%y+<CR>
 
 " Shorthand to open help on right
 nnoremap <C-H> :vert bo help
