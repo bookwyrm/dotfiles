@@ -118,9 +118,9 @@ nmap <leader>n :NERDTreeToggle<CR>
 "let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 " let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 let g:ctrlp_custom_ignore = {
-	\ 'dir':  '\v[\/]\.(git|hg|svn|node_modules)$',
-	\ 'file': '\v\.(jpe?g|bmp|png|jar|7z|zip|tar|gz|tgz|bz2)$',
-	\ }
+      \ 'dir':  '\v[\/](\.(git|hg|svn|node_modules)|wp-content/uploads)$',
+      \ 'file': '\v\.(jpe?g|bmp|png|jar|7z|zip|tar|gz|tgz|bz2)$',
+      \ }
 nmap <c-R> :CtrlPBufTag<cr>
 nmap <c-e> :CtrlPMRUFiles<cr>
 
