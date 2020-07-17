@@ -53,9 +53,9 @@ Plugin 'tobyS/vmustache'
 Plugin 'tobyS/pdv'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'Yggdroot/indentLine'
-Plugin 'iloginow/vim-stylus'
+" Plugin 'iloginow/vim-stylus'
 Plugin 'chr4/nginx.vim'
-Plugin 'chr4/sslsecure.vim'
+" Plugin 'chr4/sslsecure.vim'
 
 
 " sunburst theme
@@ -126,6 +126,7 @@ nmap <c-e> :CtrlPMRUFiles<cr>
 
 " show vim-airline all the time
 set laststatus=2
+let g:airline#extensions#whitespace#mixed_indent_algo = 1
 
 " size of a hard tabstop
 set tabstop=2
@@ -266,7 +267,7 @@ let g:UltiSnipsSnippetsDir="~/.vim/myUltiSnips"
 let g:UltiSnipsSnippetDirectories = ['myUltiSnips']
 
 " PDV
-let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
+let g:pdv_template_dir = $HOME ."/.dotfiles/vim/templates_snip"
 nnoremap <leader>d :call pdv#DocumentWithSnip()<CR>
 
 " Dash
