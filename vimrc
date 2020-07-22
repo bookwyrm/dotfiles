@@ -56,6 +56,7 @@ Plugin 'Yggdroot/indentLine'
 " Plugin 'iloginow/vim-stylus'
 Plugin 'chr4/nginx.vim'
 " Plugin 'chr4/sslsecure.vim'
+Plugin 'tpope/vim-unimpaired'
 
 
 " sunburst theme
@@ -291,3 +292,6 @@ let g:ale_linters = { 'javascript': ['eslint']}
 
 " To let backspace work for going beyond lines and the start point
 set backspace=indent,eol,start
+
+vmap <leader>= :Tabularize /=<CR>
+vmap <leader>> :Tabularize /=><CR>
