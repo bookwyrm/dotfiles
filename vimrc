@@ -293,5 +293,6 @@ let g:ale_linters = { 'javascript': ['eslint']}
 " To let backspace work for going beyond lines and the start point
 set backspace=indent,eol,start
 
+" Shortcuts for tabularize common to PHP
 vmap <leader>= :Tabularize /=<CR>
 vmap <leader>> :Tabularize /=><CR>
