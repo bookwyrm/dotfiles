@@ -29,3 +29,8 @@ export PATH="/usr/local/opt/gettext/bin:$PATH"
 export NVS_HOME="$HOME/.nvs"
 [ -s "$NVS_HOME/nvs.sh" ] && . "$NVS_HOME/nvs.sh"
 
+if [[ "$TERM" != "screen-256color" ]]
+then
+  tmux attach-session -t "$USER" || tmux new-session -s "$USER"
+  exit
+fi
