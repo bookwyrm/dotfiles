@@ -1,0 +1,29 @@
+body {
+	font-size: 20px;
+}
+h1 {
+	font-size: 28px;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+pre, code, .blob-code-inner {
+  font-family: "MLM";
+  font-size: 16px;
+  font-variant-ligatures: contextual;
+}
+
+@font-face {
+  font-family: "MLM";
+  src: local('MonoLisa-Medium'), local('MonoLisa Medium'), url(https://fonts.local/MonoLisa-Medium.woff2) format(woff2), url(https://fonts.local/MonoLisa-Medium.woff) format(woff);
+}
+
+@font-face {
+  font-family: "MLR";
+  src: local('MonoLisa-Regular'), local('MonoLisa Regular'), url(https://fonts.local/MonoLisa-Regular.woff2) format(woff2), url(https://fonts.local/MonoLisa-Regular.woff) format(woff);
+}
