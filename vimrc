@@ -57,7 +57,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'chr4/nginx.vim'
 " Plugin 'chr4/sslsecure.vim'
 Plugin 'tpope/vim-unimpaired'
-
+Plugin 'tpope/vim-ragtag'
 
 " sunburst theme
 Bundle 'sickill/vim-sunburst'
@@ -260,10 +260,11 @@ augroup END
 nmap <Leader>f :tag<space>
 
 " UltiSnips
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-"let g:UltiSnipsExpandTrigger="<C-f>"
-"let g:UltiSnipsJumpForwardTrigger="<C-f>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+" Default trigger key mappings
+" g:UltiSnipsExpandTrigger               <tab>
+" g:UltiSnipsListSnippets                <c-tab>
+" g:UltiSnipsJumpForwardTrigger          <c-j>
+" g:UltiSnipsJumpBackwardTrigger         <c-k>
 let g:UltiSnipsSnippetsDir="~/.vim/myUltiSnips"
 let g:UltiSnipsSnippetDirectories = ['myUltiSnips']
 
